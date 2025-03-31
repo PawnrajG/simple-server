@@ -18,7 +18,7 @@ pipeline {
 
         stage('Run Application') {
             steps {
-                sh 'node index.js &'
+                sh 'node index.js'
             }
         }
     }
