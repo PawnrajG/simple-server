@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'main', url: 'https://github.com/PawnrajG/simple-server.git'
+                git branch: 'main', credentialsId: 'Jenkins-Pipeline', url: 'https://github.com/PawnrajG/simple-server.git'
             }
         }
 
